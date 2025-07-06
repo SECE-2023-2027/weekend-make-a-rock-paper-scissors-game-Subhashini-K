@@ -1,0 +1,84 @@
+body {
+  background-color: white;
+  color: white;
+  font-family: Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+  background: #60B5FF;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.arena {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin: 20px 0;
+}
+
+.hand {
+  font-size: 80px;
+  transition: transform 0.3s ease;
+}
+
+.shake {
+  animation: shake 0.8s ease;
+}
+
+@keyframes shake {
+  0% { transform: translateY(0); }
+  25% { transform: translateY(-20px); }
+  50% { transform: translateY(0); }
+  75% { transform: translateY(-20px); }
+  100% { transform: translateY(0); }
+}
+
+.controls {
+  margin: 20px 0;
+}
+
+.weapon {
+  cursor: pointer;
+  background: #211C84;
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  color: white;
+  font-size: 16px;
+  margin: 0 5px;
+}
+
+.weapon:hover {
+  background-color: #725CAD;
+}
+
+.scores {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.message {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.result-text {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.choice {
+  font-size: 16px;
+  margin-top: 5px;
+}

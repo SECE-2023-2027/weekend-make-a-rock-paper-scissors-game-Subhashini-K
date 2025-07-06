@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rock Paper Scissors</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Rock Paper Scissors</h2>
+    <div class="arena">
+      <div class="player">
+        <span>Player</span>
+        <div class="hand" id="playerHand">✊</div>
+      </div>
+      <div class="vs">v/s</div>
+      <div class="computer">
+        <span>Computer</span>
+        <div class="hand" id="computerHand">✊</div>
+      </div>
+    </div>
+    <div class="controls">
+      <button class="weapon" data-choice="rock">✊ Rock</button>
+      <button class="weapon" data-choice="paper">✋ Paper</button>
+      <button class="weapon" data-choice="scissors">✌️ Scissors</button>
+    </div>
+    <div class="scores">
+      <div>Won: <span id="won">0</span></div>
+      <div>Lost: <span id="lost">0</span></div>
+      <div>Draw: <span id="draw">0</span></div>
+    </div>
+    <div class="message" id="message"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
